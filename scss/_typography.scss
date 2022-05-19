@@ -1,0 +1,51 @@
+@import "variables.scss";
+
+h1 {
+    font-size: 48px;
+    line-height: 58px;
+    color: $font;
+    strong {
+        font-weight: bold;
+    }
+}
+
+h3 {
+    font-size: 24px;
+    color: $font;
+    strong {
+        font-weight: bold;
+    }
+}
+
+h4 {
+    font-size: 20px;
+    color: $font;
+    strong {
+        font-weight: bold;
+    }
+}
+
+h5 {
+    font-size: 18px;
+    color: $font;
+    strong {
+        font-weight: bold;
+    }
+}
+
+
+h6 {
+    font-size: 16px;
+    color: $font;
+    strong {
+        font-weight: bold;
+    }
+}
+
+p {
+    font-size: 14px;
+    color: $font;
+    strong {
+        font-weight: bold;
+    } 
+}

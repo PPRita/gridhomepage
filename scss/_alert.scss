@@ -1,0 +1,103 @@
+.alert-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0 16px 16px 16px;
+}
+.alert {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 2px solid $dark-yellow;
+    background-color: $light-yellow;
+    position: relative;
+    border-radius: 16px;
+    padding: 46px 64px;
+    .icon-alert {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-right: 46px;
+        i {
+            font-size: 64px;
+            color: $dark-yellow;
+            margin: 0;
+            width: unset;
+            height: unset;
+        }
+    }
+    .message-alert {
+        h4 {
+            text-transform: uppercase;
+            color: $dark-yellow;
+        }
+        p {
+            margin-top: 8px;
+            color: $dark-yellow;
+        }
+    }
+    
+    .close-button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        button {
+            background-color: transparent;
+            background-repeat:no-repeat;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+            width: 24px;
+            height: 24px;
+            border-radius: 40px;
+            background-color: $dark-yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            opacity: .7;
+            i {
+                margin: 0;
+                width: unset;
+                height: unset;
+                font-size: 13px;
+                line-height: normal;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $light-yellow;
+                
+            }
+            &:hover {
+                opacity: 1;
+                transition: $transition;
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .alert-container {
+        .alert {
+            padding: 32px;
+        }
+    }
+}
+
+
+@media (max-width: 650px) {
+    .alert-container {
+        .alert {
+            .icon-alert {
+                display: none;
+            }
+        }
+    }
+}
